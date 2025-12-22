@@ -107,9 +107,9 @@ function checkPasswordStrength(password) {
         strengthTextEl.classList.remove('medium')
         strengthTextEl.classList.add('strong')
     }
-}
+    
     resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length, excludeAmbiguous)
-})
+}
 
 function generatePassword(lower, upper, number, symbol, length, excludeAmbiguous) {
     let generatedPassword = ''
